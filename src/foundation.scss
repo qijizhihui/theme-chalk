@@ -1,0 +1,83 @@
+@import "mixins/mixins";
+@import "common/var";
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-weight: 400;
+    font-size: $--font-size-base;
+    color: $--color-black;
+    -webkit-font-smoothing: antialiased;
+     .stdBgColor1 {
+         background-color: stdBgColor1;
+     }
+    .stdBgColor2 {
+         background-color: stdBgColor2;
+     }
+
+    .stdBgColor3 {
+         background-color: stdBgColor3;
+     }
+
+    .stdBgColor4 {
+         background-color: stdBgColor4;
+     }
+
+    .stdBgColor5 {
+         background-color: stdBgColor5;
+     }
+
+     .stdBgColor6 {
+         background-color: stdBgColor6;
+     }
+
+     .stdBgColor7 {
+         background-color: stdBgColor7;
+     }
+
+     .stdBgColor8 {
+         background-color: stdBgColor8;
+     }
+
+    .stdTextColor1 {
+         color: stdTextColor1;
+     }
+
+     .stdTextColor2 {
+         color: stdTextColor2;
+     }
+
+     .stdTextColor3 {
+         color: #00AAFF;
+     }
+
+     .stdTextColor4 {
+         color: stdTextColor3;
+     }
+
+     .stdStatusColor1 {
+         background-color: stdStatusColor1;
+     }
+
+     .stdStatusColor2 {
+         background-color: stdStatusColor2;
+     }
+
+    .stdStatusColor3 {
+         background-color: stdStatusColor3;
+     }
+
+    .stdStatusColor4 {
+         background-color: stdStatusColor4;
+     }
+
+    .stdStatusColor5 {
+         background-color: stdStatusColor5;
+     }
+
+     .stdBorderColor {
+         border: 1px solid stdBorderColor;
+     }
+
+     .stdSlideColor {
+         background-color: stdSlideColor;
+     }
+}
