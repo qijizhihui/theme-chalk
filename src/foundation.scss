@@ -7,77 +7,77 @@ body {
     color: $--color-black;
     -webkit-font-smoothing: antialiased;
      .stdBgColor1 {
-         background-color: stdBgColor1;
+         background-color: $--stdBgColor1;
      }
     .stdBgColor2 {
-         background-color: stdBgColor2;
+         background-color: $--stdBgColor2;
      }
 
     .stdBgColor3 {
-         background-color: stdBgColor3;
+         background-color: $--stdBgColor3;
      }
 
     .stdBgColor4 {
-         background-color: stdBgColor4;
+         background-color: $--stdBgColor4;
      }
 
     .stdBgColor5 {
-         background-color: stdBgColor5;
+         background-color: $--stdBgColor5;
      }
 
      .stdBgColor6 {
-         background-color: stdBgColor6;
+         background-color: $--stdBgColor6;
      }
 
      .stdBgColor7 {
-         background-color: stdBgColor7;
+         background-color: $--stdBgColor7;
      }
 
      .stdBgColor8 {
-         background-color: stdBgColor8;
+         background-color: $--stdBgColor8;
      }
 
     .stdTextColor1 {
-         color: stdTextColor1;
+         color: $--stdTextColor1;
      }
 
      .stdTextColor2 {
-         color: stdTextColor2;
+         color: $--stdTextColor2;
      }
 
      .stdTextColor3 {
-         color: #00AAFF;
+         color: $--stdTextColor3;
      }
 
      .stdTextColor4 {
-         color: stdTextColor3;
+         color: $--stdTextColor4;
      }
 
      .stdStatusColor1 {
-         background-color: stdStatusColor1;
+         background-color: $--stdStatusColor1;
      }
 
      .stdStatusColor2 {
-         background-color: stdStatusColor2;
+         background-color: $--stdStatusColor2;
      }
 
     .stdStatusColor3 {
-         background-color: stdStatusColor3;
+         background-color: $--stdStatusColor3;
      }
 
     .stdStatusColor4 {
-         background-color: stdStatusColor4;
+         background-color: $--stdStatusColor4;
      }
 
     .stdStatusColor5 {
-         background-color: stdStatusColor5;
+         background-color: $--stdStatusColor5;
      }
 
      .stdBorderColor {
-         border: 1px solid stdBorderColor;
+         border: 1px solid $--stdBorderColor;
      }
 
      .stdSlideColor {
-         background-color: stdSlideColor;
+         background-color: $--stdSlideColor;
      }
 }
