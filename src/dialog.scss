@@ -2,7 +2,6 @@
 @import "mixins/utils";
 @import "common/var";
 @import "common/popup";
-
 @include b(dialog) {
   position: relative;
   margin: 0 auto 50px;
@@ -11,7 +10,6 @@
   box-shadow: $--dialog-box-shadow;
   box-sizing: border-box;
   width: 50%;
-
   @include when(fullscreen) {
     width: 100%;
     margin-top: 0;
@@ -19,7 +17,6 @@
     height: 100%;
     overflow: auto;
   }
-
   @include e(wrapper) {
     position: fixed;
     top: 0;
@@ -29,12 +26,11 @@
     overflow: auto;
     margin: 0;
   }
-
   @include e(header) {
     padding: $--dialog-padding-primary;
     padding-bottom: 10px;
+    background-color: $--dialog-header-bgco;
   }
-
   @include e(headerbtn) {
     position: absolute;
     top: $--dialog-padding-primary;
@@ -45,46 +41,40 @@
     outline: none;
     cursor: pointer;
     font-size: $--message-close-size;
-
     .el-dialog__close {
       color: $--color-info;
     }
-
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       .el-dialog__close {
         color: $--color-primary;
       }
     }
   }
-
   @include e(title) {
     line-height: $--dialog-line-height;
     font-size: $--dialog-title-font-size;
-    color: $--color-text-primary;
+    color: $--dialog-title-color;
   }
-
   @include e(body) {
     padding: 30px 20px;
     color: $--color-text-regular;
     font-size: $--dialog-font-size;
+    background-color: $--dialog--body-bgco;
   }
-
   @include e(footer) {
     padding: $--dialog-padding-primary;
     padding-top: 10px;
     text-align: right;
     box-sizing: border-box;
-  }
-
-  // 内容居中布局
+    background-color: $--dialog-footer-bgco;
+  } // 内容居中布局
   @include m(center) {
     text-align: center;
-
     @include e(body) {
       text-align: initial;
       padding: 25px ($--dialog-padding-primary + 5px) 30px;
     }
-
     @include e(footer) {
       text-align: inherit;
     }

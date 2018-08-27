@@ -1,7 +1,6 @@
 @import "mixins/mixins";
 @import "mixins/utils";
 @import "common/var";
-
 @include b(form) {
   @include m(label-left) {
     & .el-form-item__label {
@@ -35,18 +34,16 @@
     }
   }
 }
+
 @include b(form-item) {
   margin-bottom: 22px;
   @include utils-clearfix;
-
   & .el-form-item {
     margin-bottom: 0;
   }
-
   & .el-input__validateIcon {
     display: none;
   }
-
   @include m(medium) {
     .el-form-item__label {
       line-height: 36px;
@@ -83,13 +80,12 @@
       padding-top: 1px;
     }
   }
-
   @include e(label) {
     text-align: right;
     vertical-align: middle;
     float: left;
     font-size: 14px;
-    color: $--color-text-regular;
+    color: $--form-label-color;
     line-height: 40px;
     padding: 0 12px 0 0;
     box-sizing: border-box;
@@ -99,7 +95,6 @@
     position: relative;
     font-size: 14px;
     @include utils-clearfix;
-
     .el-input-group {
       vertical-align: middle;
     }
@@ -112,7 +107,6 @@
     position: absolute;
     top: 100%;
     left: 0;
-
     @include m(inline) {
       position: relative;
       top: auto;
@@ -121,7 +115,6 @@
       margin-left: 10px;
     }
   }
-
   @include when(required) {
     .el-form-item__label:before {
       content: '*';
@@ -129,11 +122,11 @@
       margin-right: 4px;
     }
   }
-
   @include when(error) {
     & .el-input__inner,
     & .el-textarea__inner {
-      &, &:focus {
+      &,
+      &:focus {
         border-color: $--color-danger;
       }
     }
@@ -150,7 +143,8 @@
   @include when(success) {
     & .el-input__inner,
     & .el-textarea__inner {
-      &, &:focus {
+      &,
+      &:focus {
         border-color: $--color-success;
       }
     }
